@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color: #ffffff;
+    --text-color: #121214;
+}
+
+:root .bodyDark {
+    font-size: 62.5%;
+    --bg-color: #121214;
+    --text-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color);
+}
+
+header {
+    position: absolute;
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 5rem;
+}
+
+header .links {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+header .links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+header .links a:hover {
+    color: #b3cb2d;
+}
+
+.page .box {
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #b3cb2d;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0 5rem 5rem 0;
+    padding: 8rem;
+}
+
+.page .text h1 {
+    font-size: 4rem;
+    color: #121214;
+}
+
+.page .text p {
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: #121214;
+}
+
+.page .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.theme {
+    position: absolute;
+    cursor: pointer;
+    bottom: 3.5rem;
+    right: 3.5rem;
+}
+
+/* MODAL */
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    background-color: #0e2024;
+    width: 100rem;
+    height: 50rem;
+
+    text-align: center;
+
+    border-radius: 5rem;
+}
+
+.modal button {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    box-shadow: none;
+}
+
+.modal button:hover {
+    transform: scale(1.2);
+}
+
+.modal img {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #fff;
+}
+
+.modal h2 {
+    margin-top: 2.5rem;
+    font-size: 5.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.newProducts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.newProducts img {
+    width: 40rem;
+    height: 25rem;
+}
